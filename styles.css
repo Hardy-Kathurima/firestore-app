@@ -1,31 +1,32 @@
 body {
-    background: black;
-    font-family: ubuntu;
+  background: black;
+  font-family: ubuntu;
 }
 
-h1 {
+@media screen and (min-width: 320px) {
+  h1 {
     color: #fff;
     font-size: 64px;
     letter-spacing: 2px;
     margin-top: 80px;
     text-align: center;
-}
+  }
 
-.content {
+  .content {
     background: #fff;
     max-width: 960px;
     margin: 30px auto;
     padding: 20px 30px;
     border-radius: 10px 120px 10px 10px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1)
-}
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
-ul {
+  ul {
     list-style-type: none;
     padding: 0;
-}
+  }
 
-li {
+  li {
     padding: 20px;
     background: #f6f6f6;
     font-size: 20px;
@@ -33,24 +34,24 @@ li {
     position: relative;
     border-bottom: 1px solid #e6e6e6;
     height: 46px;
-}
+  }
 
-li:nth-child(even) {
+  li:nth-child(even) {
     padding: 20px;
     background: #f2f2f2;
-}
+  }
 
-li span {
+  li span {
     display: block;
-}
+  }
 
-li span:nth-child(2) {
+  li span:nth-child(2) {
     font-size: 16px;
     margin-top: 6px;
     color: #999;
-}
+  }
 
-li div {
+  li div {
     position: absolute;
     top: 0;
     right: 0px;
@@ -62,9 +63,9 @@ li div {
     padding: 10px 0;
     font-weight: bold;
     cursor: pointer;
-}
+  }
 
-form input {
+  form input {
     float: left;
     width: 38%;
     margin: 0;
@@ -75,22 +76,22 @@ form input {
     display: block;
     box-sizing: border-box;
     font-size: 18px;
-}
+  }
 
-form input:focus {
+  form input:focus {
     outline: none;
     border-bottom: 3px solid #88236f;
     padding-bottom: 8px;
     transition: all ease 0.2s;
-}
+  }
 
-form:after {
-    content: '';
+  form:after {
+    content: "";
     clear: both;
     display: block;
-}
+  }
 
-button {
+  button {
     border: 0;
     background: green;
     border-radius: 10px;
@@ -101,5 +102,5 @@ button {
     font-family: ubuntu;
     letter-spacing: 1px;
     color: white;
-
+  }
 }
